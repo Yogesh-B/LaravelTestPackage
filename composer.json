@@ -1,0 +1,23 @@
+{
+    "name": "yogesh-b/laraveltestpackage",
+    "description": "This is a test package.",
+    "authors": [{
+        "name": "YogeshB",
+        "email":"yogesh@example.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "YogeshB\\Laraveltestpackage\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "^9"
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "YogeshB\\Laraveltestpackage\\LaraveltestpackageServiceProvider"
+            ]
+        }
+    }
+}
