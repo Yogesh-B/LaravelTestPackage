@@ -1,6 +1,7 @@
 {
     "name": "yogesh-b/laraveltestpackage",
     "description": "This is a test package.",
+    "version": "0.0.1-dev",
     "authors": [{
         "name": "YogeshB",
         "email":"yogesh@example.com"
@@ -9,9 +10,6 @@
         "psr-4": {
             "YogeshB\\Laraveltestpackage\\": "src/"
         }
-    },
-    "require": {
-        "illuminate/support": "^9"
     },
     "extra": {
         "laravel":{
