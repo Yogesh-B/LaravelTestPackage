@@ -1,21 +1,20 @@
 {
     "name": "yogeshb/laraveltestpackage",
-    "description": "This is a test package.",
+    "description": "this is a laravel test package",
     "version": "0.0.1-dev",
-    "authors": [{
-        "name": "YogeshB",
-        "email":"yogesh@example.com"
-    }],
     "autoload": {
         "psr-4": {
-            "YogeshB\\Laraveltestpackage\\": "src/"
+            "Yogeshb\\Laraveltestpackage\\": "src/"
         }
     },
-    "extra": {
-        "laravel":{
-            "providers":[
-                "YogeshB\\Laraveltestpackage\\LaraveltestpackageServiceProvider"
-            ]
+    "authors": [
+        {
+            "name": "yogeshb",
+            "email": "yogesh@example.com"
         }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
     }
 }
