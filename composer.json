@@ -11,6 +11,13 @@
             "Yogeshb\\Laraveltestpackage\\": "src/"
         }
     },
+    "extra": {
+        "laravel":{
+            "aliases":{
+                "TestPackage": "Yogeshb\\Laraveltestpackage\\Facades\\TestPackage"
+            }
+        }
+    },
     "authors": [
         {
             "name": "yogeshb",
