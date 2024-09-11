@@ -11,7 +11,7 @@ class TestpackageProvider extends ServiceProvider
         // });
         $this->publishes([
             __DIR__.'/../config/laraveltestpackage.php' => config_path('laraveltestpackage.php'),
-        ]);
+        ],'test-package-config');
     }
 
     public function boot()
