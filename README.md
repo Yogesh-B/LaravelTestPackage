@@ -27,6 +27,7 @@ TestPackage::getPattern(3,'&');
 ____
 ## further improvements
 - we have not utilized the `ServiceProvider`. Get the print_character from the config/env.
+!!config not being published...priority work!!
 - complete other pattern function logic😅
 
 
