@@ -2,6 +2,10 @@
     "name": "yogeshb/laraveltestpackage",
     "description": "this is a laravel test package",
     "version": "0.0.1-dev",
+    "require":{
+        "php": ">=8.1",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    },
     "autoload": {
         "psr-4": {
             "Yogeshb\\Laraveltestpackage\\": "src/"
@@ -14,6 +18,7 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
 
     }
