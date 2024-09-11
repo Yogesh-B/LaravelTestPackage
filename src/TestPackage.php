@@ -2,7 +2,7 @@
 
 namespace Yogeshb\Laraveltestpackage;
 
-class Testpackage {
+class TestPackage {
     public function getPattern($limit, $character){
         $selection = rand(0,6); //total number of patterns
 
