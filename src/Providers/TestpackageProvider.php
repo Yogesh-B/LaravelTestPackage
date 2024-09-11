@@ -6,8 +6,16 @@ class TestpackageProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->bind('Testpackage', function ($app) {
-            return new Testpackage();
-        });
+        // $this->app->bind('Testpackage', function ($app) {
+        //     return new Testpackage();
+        // });
+        $this->publishes([
+            __DIR__.'/../config/laraveltestpackage.php' => config_path('laraveltestpackage.php'),
+        ]);
+    }
+
+    public function boot()
+    {
+        $this->mergeConfigFrom(__DIR__.'/../config/laraveltestpackage.php', 'laraveltestpackage');
     }
 }
