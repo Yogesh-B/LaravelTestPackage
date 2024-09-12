@@ -33,43 +33,70 @@ class TestPackage {
         }
     }
 
-
+    // Upward right-angled triangle (left-aligned)
     protected function up_right_triangle1($limit, $character){
-        return "Hello World! (!code is yet to implement_up_right_triangle1)";
+        $rtnString = "";
+        for ($i=1; $i <= $limit; $i++) {
+            $rtnString .= str_repeat($character, $i) . "\n";
+        }
+        return $rtnString;
     }
 
+    // Downward right-angled triangle (left-aligned)
     protected function down_right_triangle1($limit, $character){
-        return "Hello World! (!code is yet to implement_down_right_triangle1)";
+        $rtnString = "";
+        for ($i=$limit; $i > 0; $i--) {
+            $rtnString .= str_repeat($character, $i) . "\n";
+        }
+        return $rtnString;
     }
 
+    // Upward right-angled triangle (right-aligned)
     protected function up_right_triangle2($limit, $character){
-        return "Hello World! (!code is yet to implement_up_right_triangle2)";
+        $rtnString = "";
+        for ($i=1; $i <= $limit; $i++) {
+            $rtnString .= str_repeat(" ", $limit - $i) . str_repeat($character, $i) . "\n";
+        }
+        return $rtnString;
     }
 
+    // Downward right-angled triangle (right-aligned)
     protected function down_right_triangle2($limit, $character){
-        return "Hello World! (!code is yet to implement_down_right_triangle2)";
+        $rtnString = "";
+        for ($i=$limit; $i > 0; $i--) {
+            $rtnString .= str_repeat(" ", $limit - $i) . str_repeat($character, $i) . "\n";
+        }
+        return $rtnString;
     }
 
+    // Square pattern
     protected function sqaure1($limit, $character){
-
-        $rtnString = "This is a sqaure with ".$limit." limit\n\n";
+        $rtnString = "";
         for ($i=0;$i<$limit;$i++){
             for ($j=0;$j<$limit;$j++){
                 $rtnString.=$character;
             }
             $rtnString.="\n";
         }
-
         return $rtnString;
     }
 
+    // Upward isosceles triangle
     protected function up_isocel_triangle1($limit, $character){
-        return "Hello World! (!code is yet to implement_up_isocel_triangle1)";
-    }
-    
-    protected function down_isocel_triangle1($limit, $character){
-        return "Hello World! (!code is yet to implement_down_isocel_triangle1)";
+        $rtnString = "";
+        for ($i=1; $i <= $limit; $i++) {
+            $rtnString .= str_repeat(" ", $limit - $i) . str_repeat($character, 2 * $i - 1) . "\n";
+        }
+        return $rtnString;
     }
 
-    
+    // Downward isosceles triangle
+    protected function down_isocel_triangle1($limit, $character){
+        $rtnString = "";
+        for ($i=$limit; $i > 0; $i--) {
+            $rtnString .= str_repeat(" ", $limit - $i) . str_repeat($character, 2 * $i - 1) . "\n";
+        }
+        return $rtnString;
+    }
 }
+
