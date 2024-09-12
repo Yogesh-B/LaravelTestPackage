@@ -16,6 +16,6 @@ class TestpackageProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/laraveltestpackage.php', 'laraveltestpackage');
+        $this->mergeConfigFrom(__DIR__.'/../../config/laraveltestpackage.php', 'laraveltestpackage');
     }
 }
