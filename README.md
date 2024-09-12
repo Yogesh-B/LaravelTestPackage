@@ -31,3 +31,4 @@ ____
 - complete other pattern function logic😅
 
 
+### Note: This is a test package, meant solely for learning how to develop a package(at least some basics of it)[here](./developing.md) is readme for what I tried.
