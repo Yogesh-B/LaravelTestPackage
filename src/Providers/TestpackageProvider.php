@@ -10,7 +10,7 @@ class TestpackageProvider extends ServiceProvider
         //     return new Testpackage();
         // });
         $this->publishes([
-            __DIR__.'/../config/laraveltestpackage.php' => config_path('laraveltestpackage.php'),
+            __DIR__.'/../../config/laraveltestpackage.php' => config_path('laraveltestpackage.php'),
         ],'test-package-config');
     }
 
