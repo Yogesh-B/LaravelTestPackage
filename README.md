@@ -28,7 +28,6 @@ ____
 ## further improvements
 - we have not utilized the `ServiceProvider`(Not yet to its full potential). 
 - Get the print_character from the config/env.
-- complete other pattern function logic😅
 
 
 ### Note: This is a test package, meant solely for learning how to develop a package(at least some basics of it)[here](./developing.md) is readme for what I tried.
