@@ -13,6 +13,9 @@
     },
     "extra": {
         "laravel":{
+            "providers": [
+                "Yogeshb\\Laraveltestpackage\\Providers\\TestpackageProvider"
+            ],
             "aliases":{
                 "TestPackage": "Yogeshb\\Laraveltestpackage\\Facades\\TestPackage"
             }
